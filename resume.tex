@@ -1,0 +1,306 @@
+% Jason R. Blevins - Curriculum Vitae
+% 
+% Copyright (C) 2004-2011 Jason R. Blevins
+% 
+% You may use use this document as a template to create your own CV
+% and you may redistribute the source code freely.  No attribution is
+% required in any resulting documents.  I do ask that you please leave
+% this notice and the above URL in the source code if you choose to
+% redistribute this file.
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+
+% Fonts
+\usepackage[T1]{fontenc}
+% \usepackage[urw-garamond]{mathdesign}
+
+% Set your name here
+\def\name{Corey J. Oliver}
+
+% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {\name},
+  pdfkeywords = {computer science, software development, software engineering},
+  pdftitle = {\name: Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\geometry{
+  body={6.5in, 9.0in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\bfseries\large}
+\subsectionfont{\rmfamily\mdseries\itshape\normalsize}
+
+% Other possible font commands include:
+% \mdseries for default,
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets and compact spacing
+\renewenvironment{itemize}{
+  \begin{list}{}{
+      \setlength{\leftmargin}{1.5em}
+      \setlength{\itemsep}{0.25em}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0.25em}
+    }
+  }{
+  \end{list}
+}
+
+% Make lists with bullets
+\newenvironment{bitemize}{
+  \begin{list}{$\bullet$}{
+      \setlength{\leftmargin}{1.5em}
+      \setlength{\itemsep}{0.25em}
+      \setlength{\parskip}{0pt}
+      \setlength{\parsep}{0.25em}
+    }
+  }{
+  \end{list}
+}
+
+\begin{document}
+
+% Place name at left
+% {\huge \name}
+
+% Alternatively, print name centered and bold:
+\centerline{\huge \bf \name}
+
+\bigskip
+
+\begin{minipage}[t]{0.5\textwidth}
+  810 Benton Dr. Apt. 12 \\
+  Iowa City, IA 52246
+\end{minipage}
+\begin{minipage}[t]{0.5\textwidth}
+  Phone: (641) 780-9596 \\
+  Email: \href{mailto:corey-oliver@uiowa.edu}{corey-oliver@uiowa.edu} \\
+  Homepage: \href{http://coreyoliver.org/}{http://coreyoliver.org/}
+\end{minipage}
+
+\section*{Education}
+
+\begin{itemize}
+\item \textbf{M.C.S.}, University of Iowa, \hfill \textbf{May 2012}
+  \begin{itemize}
+  \item \textit{GPA:}
+    3.72
+  \end{itemize}
+\item \textbf{B.A.} Computer Science, \textit{Magna Cum Laude}, Central
+  College, Pella, IA, \hfill \textbf{May 2010}
+  \begin{itemize}
+  \item \textit{GPA:}
+    3.91 in major, 3.76 overall
+  \item \textit{Study Abroad:} Hangzhou, China, Fall 2008 and
+    London, England, Spring 2010
+  \end{itemize}
+\end{itemize}
+
+\section*{Industry}
+\begin{itemize}
+\item \textbf{Software Developer} \hfill \textbf{Summer 2010}\\
+  \textit{Alliance Technologies}, Des Moines, IA
+  \begin{bitemize}
+  \item Developed and supported \textbf{FullCount}, a touchscreen
+    enabled point of sale system used in retirement communities
+    % In collaboration with with Susan Anderson and Anshul Kumaria.
+  \item Conceptualized a FullCount component using the Javascript
+    framework Dojo which enabled users to design restaurant table
+    layouts
+  \item Created a web interface to remotely gather information on and
+    monitor remote company distributed FullCount machines
+  \end{bitemize}
+
+\item \textbf{Data Entry Operator} \hfill \textbf{Summer 2006--Fall 2007}\\
+  \textit{Pella Corporation}, Pella, IA
+  \begin{bitemize}
+  \item Designed and implemented macros written in Visual Basic
+    for various Microsoft Office products to streamline repeated
+    office tasks % discuss how this saved the company time/money
+  \item Devised a solution for automating the importation of Excel
+    spreadsheets into the software product Map Point, a geographical
+    visualization and data analysis software program, which saved over
+    a week's equivalent of manual work
+  \item Created and maintained technical documentation for software
+    solutions
+  \end{bitemize}
+\end{itemize}
+
+\section*{Teaching}
+
+\subsection*{University of Iowa, Department of Computer Science}
+
+\begin{itemize}
+\item \textbf{Teaching Assistant}, Object-Oriented Software Design \hfill \textbf{Fall 2011}
+  % Taught by Cesare Tinelli
+\item \textbf{Teaching Assistant}, Computer Science II: Data Structures \hfill \textbf{Spring 2011}
+  % Taught by Suely Oliveira
+\item \textbf{Teaching Assistant}, Introduction to Computer Science \hfill \textbf{Fall 2010}
+  % Taught by Alberto Maria Segre
+\end{itemize}
+
+\subsection*{Central College, Department of Mathematics and
+  Computer Science}
+
+\begin{itemize}
+\item \textbf{Supplemental Instructor}, Introduction to Computer
+  Science \hfill \textbf{Spring--Fall 2009}
+  % Taught by Stephen Fyfe
+\end{itemize}
+
+\pagebreak
+
+\section*{Research}
+
+\subsection*{University of Iowa, Department of Computer Science}
+
+\begin{itemize}
+\item \textbf{Research Assistant} \hfill \textbf{Spring--Summer 2011
+    \& Spring 2012}\\
+  \textit{Aaron Stump}
+  \begin{bitemize}
+  \item Implemented and verified properties of a graph data structure
+    in the programming language \textbf{Guru}, a pure functional
+    programming language for writing formal proofs demonstrating the
+    properties of programs
+  \item Proved formal properties of the software program
+    \textbf{versat}, A formally verified SAT solver incorporating the
+    essential features of modern SAT solvers, including clause
+    learning, watched literals, optimized conflict analysis,
+    non-chronological backtracking and backjumping
+    % In collaboration with Duckki Oe, Aaron Stump and Keven Clancy.
+  \item Evaluated and tested versat against leading SAT solvers
+  \item Researched and implemented a term indexing data structure for
+    the software program \textbf{gtrw}, A parser generator based on
+    term-rewriting
+    % In collaboration with Aaron Stump and JJ Meyer.
+  \item Refactored and improved gtrw codebase to improve overall
+    runtime performance for rewriting terms
+    % \item \textbf{LFSC}, A high-performance proof checker for LFSC
+    %   (``Logical Framework with Side Conditions''), a meta-language for
+    %   encoding proof systems.
+    %   In collaboration with Aaron Stump and Andrew Reynolds.
+  \end{bitemize}
+\item \textbf{Research Assistant} \hfill \textbf{Summer 2011}\\
+  \textit{Cesare Tinelli}
+  \begin{bitemize}
+  \item Built a lexer and parser for the programming language Lustre
+    for use in the front-end component of \textbf{KIND2}, An automatic
+    verification tool for safety properties of Lustre programs
+    % In collaboration with Temesghen Kahsai and Cesare Tinelli.
+  \item Implemented code transformations for the KIND2 front-end of
+    Lustre source code such as global \texttt{const} and \texttt{type}
+    propagation, recursive expansion of \texttt{include} statements,
+    and node call expansion
+  \item Verified soundness of code transformation by writing a shell
+    script to compare compilation output of transformed and
+    untransformed Lustre source files
+  \end{bitemize}
+\end{itemize}
+
+
+\subsection*{University of Houston, Department of Computer Science}
+
+\begin{itemize}
+\item \textbf{Research Assistant} \hfill \textbf{Summer 2010}\\
+  \textit{Rakesh Verma}
+  \begin{bitemize}
+  \item Coauthored working paper \textit{Fast Filtering Heuristics for
+      Bipartite Matching} which was submitted to the ALENEX 2010
+    conference
+  \item Presented on my research to colleagues and compiled a poster
+    to encourage further interest
+  \item Researched and implemented optimizations for
+    \textbf{adjmat}, an implementation of a set of heuristics to aid
+    in reducing the cost of discovering a perfect bipartite matching
+    on a graph encoded as a square adjacency matrix
+    % In collaboration with Rakesh Verma and Jack Weidrick.
+  \end{bitemize}
+\end{itemize}
+
+\subsection*{Central College, Department of Mathematics and
+  Computer Science}
+
+\begin{itemize}
+\item \textbf{Senior Honors Thesis} \hfill \textbf{Fall
+    2009--Spring 2010}\\
+  \textit{Stephen Fyfe}
+  \begin{bitemize}
+  \item Authored a senior honors thesis entitled \textit{Improving Adjmat}
+  \item Collaborated with advising faculty at Central College and the
+    University of Houston
+  \item Increased personal knowledge of research techniques
+  \end{bitemize}
+\end{itemize}
+
+\pagebreak
+
+\section*{Publications}
+
+\subsection*{Pending Work}
+
+\begin{itemize}
+\item Rakesh Verma, Jack Wiedrick and Corey Oliver. \textbf{Fast
+    Filtering Heuristics for Bipartite Matching}.
+\end{itemize}
+
+\subsection*{Refereed Conferences and Workshops}
+
+\begin{itemize}
+  {\item Duckki Oe, Aaron Stump, Corey Oliver and Kevin
+    Clancy. \textbf{A Verified Modern SAT Solver}. In Proceedings of
+    the 13th International Conference on Verification, Model Checking,
+    and Abstract Interpretation (VMCAI'12), Philadelphia,
+    Pennsylvania, 2012.}
+\end{itemize}
+
+\subsection*{Other Work}
+\begin{itemize}
+\item Corey Oliver. \textbf{The Impact of High Editorial Events on
+    Wikipedia Page Quality}. Web Mining Semester Project. University
+  of Iowa, Spring 2011.
+\item Corey Oliver. \textbf{Improving Adjmat}. Senior Honors
+  Thesis. Central College, Spring 2010.
+\end{itemize}
+
+\section*{Skills}
+\begin{itemize}
+\item \textbf{Languages.} Java, Scala, OCaml, Python, \LaTeX, Bash,
+  C/C++, Javascript, Actionscript, HTML
+\item \textbf{Operating Systems.} Linux, UNIX, MacOS X, Windows
+\item
+\end{itemize}
+\medskip
+
+% Footer
+\begin{center}
+  \begin{small}
+    Last updated: \today
+  \end{small}
+\end{center}
+
+\end{document}
