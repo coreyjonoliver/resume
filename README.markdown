@@ -1,60 +1,33 @@
-ginger
+Resume
 ================================================================
 Corey Oliver, 2011
 
-A Computer Algebra System written in OCaml.
+This is my resume written in Latex based on a template created by
+Jason Blevins. The original template can be found on Jason's
+[website][1]. Also the license provided in the originally template is
+given both below and in the source code of my resume.
 
-Requirements
-------------
-  * OCaml
-  * [OCaml with Batteries][1]
 
-Usage
------
+Compiling Latex Source to PDF
+---------------------------
 
-The Ginger project includes one command line tool: `gingeri`, the
-Ginger interpreter. `gingeri` uses standard input for the Ginger input
-and standard output for the program output. For example, to interpret
-the Ginger script `foo.ginger` and write the output of `gingeri` to
-the file `bar.out` you would use the following command:
+The source file `resume.tex` can be compiled to a PDF using the
+following command:
 
-    ./gingeri < foo.ginger > bar.out
-
-Language Tutorial
------------
-
-A brief tutorial for getting started using Ginger is provided in
-`tutorial/`.
-
-Language Manual
----------------
-
-A manual for the input language of Ginger is available in
-`manual/language-input.txt`.
-
-Architecture
-------------
-
-A brief document describing the architecture of Ginger is given in
-`manual/architecture.txt`.
+    pdflatex resume.tex	  
 
 License
 -------
 
-Copyright (c) 2011, Corey Oliver, corey.jon.oliver@gmail.com
+Jason R. Blevins - Curriculum Vitae
 
-Permission to use, copy, modify, and/or distribute this software for
-any purpose with or without fee is hereby granted, provided that the
-above copyright notice and this permission notice appear in all
-copies.
+Copyright (C) 2004-2011 Jason R. Blevins
 
-THE SOFTWARE IS PROVIDED “AS IS” AND THE AUTHOR DISCLAIMS ALL
-WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
-WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
-AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
-DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
-PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
-TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-PERFORMANCE OF THIS SOFTWARE.
+You may use use this document as a template to create your own CV and
+you may redistribute the source code freely.  No attribution is
+required in any resulting documents.  I do ask that you please leave
+this notice and the above URL in the source code if you choose to
+redistribute this file.
 
-[1]: http://batteries.forge.ocamlcore.org/
+
+[1]: http://www.jblevins.org/
