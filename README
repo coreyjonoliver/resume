@@ -19,15 +19,20 @@ following command:
 License
 -------
 
-Jason R. Blevins - Curriculum Vitae
+Copyright (c) 2011-2012, Corey Oliver, corey.jon.oliver@gmail.com
 
-Copyright (C) 2004-2011 Jason R. Blevins
+Permission to use, copy, modify, and/or distribute this software for
+any purpose with or without fee is hereby granted, provided that the
+above copyright notice and this permission notice appear in all
+copies.
 
-You may use use this document as a template to create your own CV and
-you may redistribute the source code freely.  No attribution is
-required in any resulting documents.  I do ask that you please leave
-this notice and the above URL in the source code if you choose to
-redistribute this file.
-
+THE SOFTWARE IS PROVIDED “AS IS” AND THE AUTHOR DISCLAIMS ALL
+WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED
+WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE
+AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THIS SOFTWARE.
 
 [1]: http://www.jblevins.org/
