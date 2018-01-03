@@ -1,4 +1,4 @@
-% Copyright (c) 2011-2014, Corey Oliver, corey.jon.oliver@gmail.com
+% Copyright (c) 2011-2018, Corey Oliver, corey.jon.oliver@gmail.com
 
 % Permission to use, copy, modify, and/or distribute this software for
 % any purpose with or without fee is hereby granted, provided that the
@@ -61,7 +61,7 @@
 % Custom section fonts
 \usepackage{sectsty}
 \sectionfont{\rmfamily\bfseries\large}
-\subsectionfont{\rmfamily\mdseries\itshape\normalsize}
+\subsectionfont{\rmfamily\mdseries\itshape\normalsize} % chktex 6
 
 % Other possible font commands include:
 % \mdseries for default,
@@ -88,7 +88,7 @@
 
 % Make lists with bullets
 \newenvironment{bitemize}{
-  \begin{list}{$\bullet$}{
+  \begin{list}{\(\bullet \)}{
       \setlength{\leftmargin}{1.5em}
       \setlength{\itemsep}{0.25em}
       \setlength{\parskip}{0pt}
@@ -110,14 +110,15 @@
 
 \bigskip
 
-\begin{minipage}[t]{0.5\textwidth}
-  2742 Fleur Dr. Apt. 313 \\
-  Des Moines, IA 50321
+\noindent
+\begin{minipage}[t]{0.49\textwidth}
+  6802 E Odessa Ct\\
+  Bel Aire, KS 67226
 \end{minipage}
 \begin{minipage}[t]{0.5\textwidth}
-  Phone: (641) 780-9596 \\
-  Email: \href{mailto:corey.jon.oliver@gmail.com}{corey.jon.oliver@gmail.com} \\
-  Homepage: \href{http://coreyoliver.org/}{http://coreyoliver.org/}
+  \hfill Phone: (641) 780-9596 \\ % chktex 8
+  \hspace*{0pt} \hfill Email: \href{mailto:corey.jon.oliver@gmail.com}{corey.jon.oliver@gmail.com} \\
+  \hspace*{0pt} \hfill Homepage: \href{http://coreyoliver.org/}{http://coreyoliver.org/}
 \end{minipage}
 
 \section*{Education}
