@@ -1,0 +1,27 @@
+name: Continuous Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    name: Build, test, and publish images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Build
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
+          work_in_root_file_dir: true
+          latexmk_use_xelatex: true
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          fail_on_unmatched_files: true
+          files: resume.pdf

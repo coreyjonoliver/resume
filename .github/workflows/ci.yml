@@ -1,0 +1,28 @@
+name: Continous Integration
+
+on:
+  pull_request:
+    branches: ['**']
+  push:
+    branches-ignore:
+      - main
+
+concurrency:
+  group: build-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    name: Build and Test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout current branch
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Build
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: resume.tex
+          work_in_root_file_dir: true
+          latexmk_use_xelatex: true
