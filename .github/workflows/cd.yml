@@ -22,7 +22,7 @@ jobs:
           latexmk_use_xelatex: true
       - name: Generate release tag
         run: |
-          echo "release_tag=v$(date +"+%F.%H%M")" >> $GITHUB_ENV
+          echo "release_tag=v$(date "+%F.%H%M")" >> $GITHUB_ENV
       - name: Release
         uses: softprops/action-gh-release@v1
         with:
