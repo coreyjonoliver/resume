@@ -5,6 +5,9 @@ on:
     branches:
       - main
 
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 jobs:
   build-and-push:
     name: Build, Test, and Release
@@ -28,3 +31,5 @@ jobs:
         with:
           tag_name: ${{ env.release_tag }}
           files: resume.pdf
+          token: ${{ secrets.GITHUB_TOKEN }}
+
