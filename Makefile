@@ -8,7 +8,7 @@ TARGET := $(BUILD_DIR)/resume.pdf
 DOCKER = docker
 DOCKER_OPTS = run --rm -v $(CURDIR):/workdir --workdir /workdir $(DOCKER_IMAGE)
 XELATEX := xelatex
-LATEXINDENT_OPTS := -y='defaultIndent: "  "'
+LATEXINDENT_OPTS := -g=/dev/null -y='defaultIndent: "  "'
 
 ifeq "$(USE_DOCKER)" "yes"
 	LATEXMK := $(DOCKER) $(DOCKER_OPTS) latexmk
@@ -43,9 +43,10 @@ lint: $(SOURCE)
 
 .PHONY: format
 format: $(SOURCE)
-	$(LATEXINDENT) $(LATEXINDENT_OPTS) -s -w $<
+	$(LATEXINDENT) $(LATEXINDENT_OPTS) -s $< -o $<
 
 .PHONY: clean
 clean:
 	rm -rf $(BUILD_DIR)
 	$(LATEXMK) -c $(SOURCE)
+
