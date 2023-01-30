@@ -31,4 +31,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.release_tag }}
-          files: resume.pdf
+          files: build/resume.pdf
