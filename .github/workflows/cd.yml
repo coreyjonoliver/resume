@@ -19,11 +19,11 @@ jobs:
         with:
           fetch-depth: 0
       - name: Build
-        uses: xu-cheng/latex-action@v2
+        uses: xu-cheng/texlive-action/full@v1
         with:
-          root_file: resume.tex
-          work_in_root_file_dir: true
-          latexmk_use_xelatex: true
+          run: |
+            apk add make
+            make build/resume.pdf USE_DOCKER=no
       - name: Generate release tag
         run: |
           echo "release_tag=v$(date "+%F.%H%M")" >> $GITHUB_ENV
